@@ -1,0 +1,15 @@
+.addtodo {
+    text-align: center;
+    display:block;
+    margin:10px;
+}
+
+.addtodo > input {
+    border:none;
+    border-bottom: 2px solid black;
+    background: white;
+}
+
+button{
+    background:white;
+}

@@ -1,9 +1,4 @@
-import {createStore,combineReducers} from 'redux'
-import todoReducer from '../reducers/todoReducer'
-import editReducer from '../reducers/editReducer';
-const rootReducer = combineReducers({
-    todos:todoReducer,
-    todo:editReducer
-})
+import {createStore} from 'redux'
+import { allReducers } from '../reducers/allReducers'
 
-export const store = createStore(rootReducer);
+export const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
